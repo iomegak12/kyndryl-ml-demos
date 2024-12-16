@@ -1,0 +1,7 @@
+xgboost
+scikit-learn==1.4.0
+pandas
+numpy
+matplotlib
+mlflow[extras]
+python-dotenv

@@ -1,0 +1,32 @@
+artifact_path: model
+flavors:
+  python_function:
+    data: model.xgb
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.12.7
+  xgboost:
+    code: null
+    data: model.xgb
+    model_class: xgboost.sklearn.XGBClassifier
+    model_format: xgb
+    xgb_version: 2.1.3
+mlflow_version: 2.19.0
+model_size_bytes: 80105
+model_uuid: 5ff470045cbf42b18031f94d333aeff7
+run_id: 5e411905a21a43579b8bf2f61fdb7258
+signature:
+  inputs: '[{"type": "long", "name": "age", "required": true}, {"type": "long", "name":
+    "sex", "required": true}, {"type": "long", "name": "cp", "required": true}, {"type":
+    "long", "name": "trestbps", "required": true}, {"type": "long", "name": "chol",
+    "required": true}, {"type": "long", "name": "fbs", "required": true}, {"type":
+    "long", "name": "restecg", "required": true}, {"type": "long", "name": "thalach",
+    "required": true}, {"type": "long", "name": "exang", "required": true}, {"type":
+    "double", "name": "oldpeak", "required": true}, {"type": "long", "name": "slope",
+    "required": true}, {"type": "long", "name": "ca", "required": true}, {"type":
+    "integer", "name": "thal", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int32", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-12-16 11:18:03.302635'
