@@ -1,0 +1,10 @@
+langchain
+langchain-core
+langchain-openai
+langchain-community
+pypdf
+pinecone
+langchain-pinecone==0.2.0
+python-dotenv
+numexpr
+streamlit
